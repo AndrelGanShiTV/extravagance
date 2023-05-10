@@ -1,10 +1,8 @@
-function Imagen() {
-    const imagenDefault = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQBR18fTKmQmFh9ZnCw2nTPqjC2KcgdFysK44oozmo&s';
-
+function Imagen(props) {
     return (
         <>
             <div>
-                <img src={imagenDefault} />
+                <img src={props.image} />
             </div>
         </>
     );
