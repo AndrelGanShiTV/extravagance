@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Imagen from './componentes/Imagen';
+import Nav from './componentes/Nav/Nav'
+import Carrusel from './componentes/ImagenesCarrusel/Carrusel'
 
 function App() {
   return (
-    <div className="App">
-      <Imagen />
-    </div>
+    <>
+      <div className="App">
+        <Nav />
+        <Carrusel />
+      </div>
+    </>
   );
 }
 
