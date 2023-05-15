@@ -24,7 +24,7 @@ function Registrar(){
                           Tu contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.
                         </div>
                     </div>
-                    <div class="mb-2 form-check">
+                    <div class="mb-2 form-check"> 
                       <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
                       <label class="form-check-label" for="exampleCheck1">Verificado</label>
                     </div>
