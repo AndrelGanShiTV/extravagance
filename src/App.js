@@ -4,6 +4,7 @@ import Carrusel from './componentes/ImagenesCarrusel/Carrusel'
 import Ingresar from './componentes/Ingresar/Ingresar'
 import Error from './componentes/Error/Error'
 import Home from './componentes/Home/Home'
+import Footer from './componentes/Footer/Footer'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
         </Routes>
       </Router>
       </nav>
+      <Footer />
     </>
   );
 }
