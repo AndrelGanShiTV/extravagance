@@ -13,7 +13,7 @@ function Registrar(){
             <h3 class="mb-5">Registrarse</h3>
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label" ></label>
+                <label for="exampleInputEmail1" class="form-label" >Correo</label>
                  <input  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
               <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
               </div>
