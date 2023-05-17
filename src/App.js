@@ -1,6 +1,5 @@
 import './App.css';
 import Nav from './componentes/Nav/Nav'
-import Carrusel from './componentes/ImagenesCarrusel/Carrusel'
 import Ingresar from './componentes/Ingresar/Ingresar'
 import Registrar from './componentes/Registrar/Registrar';
 import Error from './componentes/Error/Error'
