@@ -48,7 +48,7 @@ function Registrar() {
                       setPass2(e.target.value)
                     }} type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></input>
                   </div>
-                  <Link to="/Ingresar"><button onClick={submitReview} type="submit" class="btn btn-primary">Enviar</button></Link>
+                  <button onClick={submitReview} type="submit" class="btn btn-primary">Enviar</button>
                 </form>
               </div>
             </div>
