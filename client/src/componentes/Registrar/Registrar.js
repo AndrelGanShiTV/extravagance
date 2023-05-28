@@ -7,6 +7,13 @@ function Registrar() {
   const [correo, setCorreo] = useState('');
   const [pass, setPass] = useState('');
   const [pass2, setPass2] = useState('');
+  const [usuarioList, setUsuarioList] = useState([]);
+
+  useEffect(() => {
+    Axios.get('http://localhost:3001/api/get').then((response)=>{
+      setUsuarioList(response.data);
+    })
+  }, [])
 
   const submitReview = () => {
     Axios.post(`http://localhost:3001/api/insert`, {
@@ -49,6 +56,14 @@ function Registrar() {
                     }} type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></input>
                   </div>
                   <button onClick={submitReview} type="submit" class="btn btn-primary">Enviar</button>
+                  <div style={{
+                    color: "#539fa2",
+                    margin: "5px"
+                  }}>
+                  {usuarioList.map((val) =>{
+                    return <h6>Correo: {val.correo} | Contraseña: {val.contraseña}</h6>
+                  })}
+                  </div>
                 </form>
               </div>
             </div>
