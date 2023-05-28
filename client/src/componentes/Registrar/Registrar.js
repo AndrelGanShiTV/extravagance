@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../img/exlogo.png'
 import Axios from 'axios'
+import { Link } from 'react-router-dom';
 
 function Registrar() {
   const [correo, setCorreo] = useState('');
@@ -47,7 +48,7 @@ function Registrar() {
                       setPass2(e.target.value)
                     }} type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></input>
                   </div>
-                  <button onClick={submitReview} type="submit" class="btn btn-primary">Enviar</button>
+                  <Link to="/Ingresar"><button onClick={submitReview} type="submit" class="btn btn-primary">Enviar</button></Link>
                 </form>
               </div>
             </div>
