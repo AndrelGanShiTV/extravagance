@@ -16,11 +16,16 @@ function Registrar() {
   }, [])
 
   const submitReview = () => {
+    
     Axios.post(`http://localhost:3001/api/insert`, {
       correo: correo, 
-      pass: pass}).then(() => {
-        alert("succesful insert");
-      })
+      pass: pass
+    });
+
+    setUsuarioList([
+      ...usuarioList, 
+      {correo: correo, pass: pass}, 
+    ]);
   };
 
   return (
